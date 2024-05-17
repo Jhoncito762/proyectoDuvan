@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Home from "./paginas/Home";
 import Product from "./paginas/Products";
 import Contact from "./paginas/Contact";
+import Menu from "./paginas/Menu";
 import Login from "./paginas/Login";
 import Register from "./paginas/Register";
 import ProductView from "./paginas/ProductView";
@@ -19,6 +20,9 @@ function App() {
         <Switch>
           <Route path='/' exact>
             <Home />
+          </Route>
+          <Route path='/menu' exact>
+            <Menu />
           </Route>
           <Route path='/product' exact>
             <Product />

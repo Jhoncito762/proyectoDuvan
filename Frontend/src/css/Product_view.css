@@ -21,7 +21,7 @@
 .photo-container {
   position: absolute;
   left: -2.5em;
-  display: grid;
+  display: hidden;
   grid-template-rows: 1fr;
   width: 400px;
   height: 100%;
@@ -36,6 +36,7 @@
 }
 .photo-main .controls {
   display: flex;
+  margin-left: 100px;
   justify-content: space-between;
   padding: 0.8em;
   color: #fff;
@@ -45,13 +46,14 @@
 }
 .photo-main img {
   position: absolute;
-  left: -3.5em;
+  left: 25%;
   top: 2em;
-  max-width: 110%;
+  max-width: 200px;
   filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
 }
 
 .photo-album {
+  display: none;
   padding: 0.7em 1em;
   border-radius: 0 0 6px 6px;
   background-color: #fff;
