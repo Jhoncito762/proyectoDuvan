@@ -4,9 +4,11 @@ import "../css/card_product.css"
 
 
 const Imagen = styled.img`
+    display: flex;
+    margin: 0 auto;
     max-width: 400px;
-    width: 100%;
-    margin: 100px auto 0 auto;
+    width: 50%;
+    margin: 50px auto 0 auto;
     display: block;
 `
 
@@ -23,7 +25,8 @@ export const Card_product = (props) => {
     <div className="card_b">
         <div className="imgBox">
             <Imagen
-                src={'http://localhost:7777' + props.imagen} 
+                className=''
+                src={'http://localhost:7777' + props.imagen}
             />
         </div>
         <div className="contentBox">

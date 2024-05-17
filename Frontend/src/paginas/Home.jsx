@@ -61,8 +61,17 @@ const Home = () => {
         </Contenedor>
       <Contenedor>
 
-      
-      {data.map((producto, index) => (
+      {data?.length > 0 && data.slice(0, 5).map( item => (
+        <CardP
+          key={item._id}
+          title={item.nombre}
+          price={item.precio}
+          imagen={item.imagen}
+          enlace={item._id}
+        />
+      ))}
+
+      {/* {data.map((producto, index) => (
         <CardP
           key={index}
           title={producto.nombre}
@@ -70,7 +79,7 @@ const Home = () => {
           imagen={producto.imagen}
           enlace={producto._id}
         />
-      ))}
+      ))} */}
       
         {/* <CardP title="Empanada Dorada" price="$1.500" imagen={ImagenEmpanada}  />	  */}
   
